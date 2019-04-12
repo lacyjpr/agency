@@ -1,6 +1,6 @@
 ## March 2019 Speedrun
 
-[![Build Status](https://travis-ci.org/lacyjpr/landing.svg?branch=master)](https://travis-ci.org/lacyjpr/landing)[![Greenkeeper badge](https://badges.greenkeeper.io/lacyjpr/landing.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/lacyjpr/landing.svg?branch=master)](https://travis-ci.org/lacyjpr/landing)
 
 March 24 - April 24, 2019
 
