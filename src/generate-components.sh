@@ -40,7 +40,7 @@ EOT
 
 # Initialize the exports for the project
 cat << EOT >> ${folder}/${project}/index.js
-import ${project} from './${project}.jsx';
+import ${project} from './${project}.js';
 export default ${project};
 EOT
 

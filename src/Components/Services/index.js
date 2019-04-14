@@ -1,2 +1,2 @@
-import Services from './Services.jsx';
+import Services from './Services.js';
 export default Services;

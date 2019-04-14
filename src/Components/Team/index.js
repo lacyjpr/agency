@@ -1,2 +1,2 @@
-import Team from './Team.jsx';
+import Team from './Team.js';
 export default Team;
