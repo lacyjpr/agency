@@ -27,7 +27,7 @@ cat << EOT >> ${folder}/${project}/${project}.scss
 EOT
 
 # Initialize the JSX for the project
-cat << EOT >> ${folder}/${project}/${project}.jsx
+cat << EOT >> ${folder}/${project}/${project}.js
 import React from 'react';
 import './${project}.scss';
 const ${project} = () => (
