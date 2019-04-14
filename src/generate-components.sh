@@ -29,6 +29,7 @@ EOT
 # Initialize the JSX for the project
 cat << EOT >> ${folder}/${project}/${project}.js
 import React from 'react';
+
 import './${project}.scss';
 const ${project} = () => (
     <div className='${project}'>
@@ -48,7 +49,9 @@ EOT
 cat << EOT >> ${folder}/${project}/${project}.test.js
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import ${project} from './${project}';
+
 describe('<${project} />', () => {
   it('renders without crashing', () => {
     shallow(<${project} />);

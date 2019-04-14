@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Team.scss';
 const Team = () => (
     <div className='Team'>
