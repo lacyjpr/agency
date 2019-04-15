@@ -4,9 +4,14 @@ import './Header.scss';
 const Header = () => {
   const [collapsed, setCollapse] = useState(false);
 
-  // useEffect(() => {
-  //   console.log(document.body.scrollTop);
-  // });
+  useEffect(() => {
+    window.addEventListener('scroll', scrollSpy);
+  });
+
+  const scrollSpy = () => {
+    console.log('working');
+    console.log(window.pageYOffset);
+  };
 
   return (
     <div className='Header'>
