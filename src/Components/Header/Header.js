@@ -17,15 +17,6 @@ const Header = () => {
       {collapsed ? <p>collapsed</p> : <p>not collapsed</p>}
       <button onClick={() => setCollapse(!collapsed)}>Click This!</button>
       <h1>Header</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };
