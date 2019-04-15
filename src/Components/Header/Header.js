@@ -6,6 +6,9 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', scrollPosition);
+    return () => {
+      window.removeEventListener('scroll', scrollPosition);
+    };
   });
 
   const scrollPosition = () => {
