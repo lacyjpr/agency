@@ -11,15 +11,6 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
 class App extends Component {
-  // componentDidMount() {
-  //   window.addEventListener('scroll', this.scrollSpy);
-  // }
-
-  // scrollSpy = () => {
-  //   console.log('working');
-  //   console.log(window.pageYOffset);
-  // };
-
   render() {
     return (
       <div className='App'>

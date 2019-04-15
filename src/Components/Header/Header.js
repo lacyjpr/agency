@@ -5,10 +5,10 @@ const Header = () => {
   const [collapsed, setCollapse] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollSpy);
+    window.addEventListener('scroll', scrollPosition);
   });
 
-  const scrollSpy = () => {
+  const scrollPosition = () => {
     console.log('working');
     console.log(window.pageYOffset);
   };
