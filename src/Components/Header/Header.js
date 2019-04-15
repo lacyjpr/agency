@@ -10,6 +10,7 @@ const Header = () => {
 
   const scrollPosition = () => {
     console.log(window.pageYOffset);
+    console.log(window.innerWidth);
   };
 
   return (
