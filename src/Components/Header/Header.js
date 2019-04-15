@@ -9,7 +9,6 @@ const Header = () => {
   });
 
   const scrollPosition = () => {
-    console.log('working');
     console.log(window.pageYOffset);
   };
 
