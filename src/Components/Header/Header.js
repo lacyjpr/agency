@@ -13,6 +13,13 @@ const Header = () => {
 
   const scrollPosition = () => {
     console.log(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    windowWidth();
+  });
+
+  const windowWidth = () => {
     console.log(window.innerWidth);
   };
 
