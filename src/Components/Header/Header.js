@@ -9,7 +9,7 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', scrollPosition);
     };
-  });
+  }, []);
 
   const scrollPosition = () => {
     console.log(window.pageYOffset);
