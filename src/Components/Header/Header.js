@@ -3,6 +3,7 @@ import './Header.scss';
 
 const Header = () => {
   const [collapsed, setCollapse] = useState(false);
+  const [yPosition, setYposition] = useState(null);
 
   useEffect(() => {
     window.addEventListener('scroll', scrollPosition);
@@ -13,6 +14,7 @@ const Header = () => {
 
   const scrollPosition = () => {
     console.log(window.pageYOffset);
+    setYposition(window.pageYOffset);
   };
 
   useEffect(() => {
@@ -31,6 +33,7 @@ const Header = () => {
     <div className='Header'>
       {collapsed ? <p>collapsed</p> : <p>not collapsed</p>}
       <button onClick={() => setCollapse(!collapsed)}>Click This!</button>
+      <p>Scroll Position {yPosition}</p>
       <h1>Header</h1>
     </div>
   );
