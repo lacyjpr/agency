@@ -17,7 +17,11 @@ const Header = () => {
 
   useEffect(() => {
     windowWidth();
-  });
+    window.addEventListener('resize', windowWidth);
+    return () => {
+      window.removeEventListener('resize', windowWidth);
+    };
+  }, []);
 
   const windowWidth = () => {
     console.log(window.innerWidth);
