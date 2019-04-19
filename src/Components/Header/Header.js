@@ -17,17 +17,17 @@ const Header = () => {
     setYposition(window.pageYOffset);
   };
 
-  useEffect(() => {
-    windowWidth();
-    window.addEventListener('resize', windowWidth);
-    return () => {
-      window.removeEventListener('resize', windowWidth);
-    };
-  }, []);
+  // useEffect(() => {
+  //   windowWidth();
+  //   window.addEventListener('resize', windowWidth);
+  //   return () => {
+  //     window.removeEventListener('resize', windowWidth);
+  //   };
+  // }, []);
 
-  const windowWidth = () => {
-    console.log(window.innerWidth);
-  };
+  // const windowWidth = () => {
+  //   console.log(window.innerWidth);
+  // };
 
   return (
     <div className='Header'>
