@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Header.scss';
 
 const Header = () => {
-  const [collapsed, setCollapse] = useState(false);
+  const [collapsed, setCollapse] = useState(true);
   const [yPosition, setYposition] = useState(null);
 
   useEffect(() => {
