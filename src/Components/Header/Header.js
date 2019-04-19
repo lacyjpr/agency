@@ -35,6 +35,24 @@ const Header = () => {
       <button onClick={() => setCollapse(!collapsed)}>Click This!</button>
       <p>Scroll Position {yPosition}</p>
       <h1>Header</h1>
+      <div className='Header__menu'>☰</div>
+      <ul className='Header__nav'>
+        <li className='Header__nav--link'>
+          <a href='#services'>Services</a>
+        </li>
+        <li className='Header__nav--link'>
+          <a href='#portfolio'>Portfolio</a>
+        </li>
+        <li className='Header__nav--link'>
+          <a href='#about'>About</a>
+        </li>
+        <li className='Header__nav--link'>
+          <a href='#team'>Team</a>
+        </li>
+        <li className='Header__nav--link'>
+          <a href='#contact'>Contact</a>
+        </li>
+      </ul>
     </div>
   );
 };
