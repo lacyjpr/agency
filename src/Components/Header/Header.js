@@ -17,17 +17,12 @@ const Header = () => {
     setYposition(window.pageYOffset);
   };
 
-  // useEffect(() => {
-  //   windowWidth();
-  //   window.addEventListener('resize', windowWidth);
-  //   return () => {
-  //     window.removeEventListener('resize', windowWidth);
-  //   };
-  // }, []);
-
-  // const windowWidth = () => {
-  //   console.log(window.innerWidth);
-  // };
+  const navToggle = () => {
+    let collapse = document.querySelector('.Header__nav');
+    collapse.style.display === 'block'
+      ? (collapse.style.display = 'none')
+      : (collapse.style.display = 'block');
+  };
 
   return (
     <div className='Header'>
@@ -35,7 +30,9 @@ const Header = () => {
       <button onClick={() => setCollapse(!collapsed)}>Click This!</button>
       <p>Scroll Position {yPosition}</p>
       <h1>Header</h1>
-      <div className='Header__menu'>☰</div>
+      <div className='Header__menu' onClick={navToggle}>
+        ☰
+      </div>
       <ul className='Header__nav'>
         <li className='Header__nav--link'>
           <a href='#services'>Services</a>

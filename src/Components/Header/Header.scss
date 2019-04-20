@@ -4,4 +4,8 @@
   width: 100%;
   background-color: gray;
   top: 0;
+
+  &__nav {
+    display: none;
+  }
 }
