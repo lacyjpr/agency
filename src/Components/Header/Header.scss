@@ -9,3 +9,19 @@
     display: none;
   }
 }
+
+@media (min-width: 992px) {
+  .Header {
+    &__menu {
+      display: none;
+    }
+
+    &__nav {
+      display: block;
+
+      &--link {
+        display: inline;
+      }
+    }
+  }
+}
