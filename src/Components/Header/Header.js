@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Header.scss';
 
 const Header = () => {
-  const [collapsed, setCollapse] = useState(true);
   const [yPosition, setYposition] = useState(null);
 
   useEffect(() => {
@@ -26,9 +25,6 @@ const Header = () => {
 
   return (
     <div className='Header'>
-      {collapsed ? <p>collapsed</p> : <p>not collapsed</p>}
-      <button onClick={() => setCollapse(!collapsed)}>Click This!</button>
-      <p>Scroll Position {yPosition}</p>
       <h1>Header</h1>
       <div className='Header__menu' onClick={navToggle}>
         ☰
