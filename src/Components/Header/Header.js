@@ -9,12 +9,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', scrollPosition);
-    // if (window.pageYOffset > 50) {
-    //   setScrolled(true);
-    // } else {
-    //   setScrolled(false);
-    // }
-    //console.log(scrolled);
     return () => {
       window.removeEventListener('scroll', scrollPosition);
     };
@@ -37,24 +31,61 @@ const Header = () => {
     <div>
       <div className='Header'>
         <h1>Header</h1>
-        <div>
-          <section id='section-1'>section 1</section>
-          <section id='section-2'>section 2</section>
-          <section id='section-3'>section 3</section>
-        </div>
-
         <Scrollspy
-          items={['section-1', 'section-2', 'section-3']}
-          currentClassName='is-current'
+          items={[
+            'services',
+            'portfolio',
+            'about',
+            'team',
+            'users',
+            'contact',
+            'footer',
+          ]}
+          currentClassName='nav__item--active'
+          className='nav__inner'
+          style={{
+            fontWeight: 300,
+          }}
+          offset={-440}
+          onUpdate={el => {
+            console.log(el);
+          }}
         >
-          <li>
-            <a href='#section-1'>section 1</a>
+          {/* <li className='nav__item'>
+            <a href='#hero' className='nav__link'>
+              Hero
+            </a>
           </li>
-          <li>
-            <a href='#section-2'>section 2</a>
+          <li className='nav__item'>
+            <a href='#services' className='nav__link'>
+              Services
+            </a>
           </li>
-          <li>
-            <a href='#section-3'>section 3</a>
+          <li className='nav__item'>
+            <a href='#portfolio' className='nav__link'>
+              Portfolio
+            </a>
+          </li> */}
+          <li className='Header__nav--link'>
+            <a href='#hero'> </a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#services'>Services</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#portfolio'>Portfolio</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#about'>About</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#team'>Team</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#users'>Users</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#contact'>Contact</a>
           </li>
         </Scrollspy>
 
