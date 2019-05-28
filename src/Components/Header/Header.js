@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import Scrollspy from 'react-scrollspy';
 import './Header.scss';
 
 const Header = () => {
   let [yPosition, setYposition] = useState(null);
-  const [scrolled, setScrolled] = useState(false);
+  //const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', scrollPosition);
-    if (window.pageYOffset > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-    console.log(scrolled);
+    // if (window.pageYOffset > 50) {
+    //   setScrolled(true);
+    // } else {
+    //   setScrolled(false);
+    // }
+    //console.log(scrolled);
     return () => {
       window.removeEventListener('scroll', scrollPosition);
     };
