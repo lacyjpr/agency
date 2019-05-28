@@ -2,18 +2,26 @@ import React, { useState, useEffect } from 'react';
 import './Header.scss';
 
 const Header = () => {
-  const [yPosition, setYposition] = useState(null);
+  let [yPosition, setYposition] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', scrollPosition);
+    if (window.pageYOffset > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+    console.log(scrolled);
     return () => {
       window.removeEventListener('scroll', scrollPosition);
     };
-  }, []);
+  });
 
   const scrollPosition = () => {
     console.log(window.pageYOffset);
-    setYposition(window.pageYOffset);
+    setYposition((yPosition = window.pageYOffset));
+    console.log(yPosition);
   };
 
   const navToggle = () => {
