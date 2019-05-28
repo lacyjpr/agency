@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//import ScrollspyNav from './ScrollspyNav';
 import Scrollspy from 'react-scrollspy';
 import './Header.scss';
 
@@ -33,28 +34,51 @@ const Header = () => {
   };
 
   return (
-    <div className='Header'>
-      <h1>Header</h1>
-      <div className='Header__menu' onClick={navToggle}>
-        ☰
+    <div>
+      <div className='Header'>
+        <h1>Header</h1>
+        <div>
+          <section id='section-1'>section 1</section>
+          <section id='section-2'>section 2</section>
+          <section id='section-3'>section 3</section>
+        </div>
+
+        <Scrollspy
+          items={['section-1', 'section-2', 'section-3']}
+          currentClassName='is-current'
+        >
+          <li>
+            <a href='#section-1'>section 1</a>
+          </li>
+          <li>
+            <a href='#section-2'>section 2</a>
+          </li>
+          <li>
+            <a href='#section-3'>section 3</a>
+          </li>
+        </Scrollspy>
+
+        <div className='Header__menu' onClick={navToggle}>
+          ☰
+        </div>
+        <ul className='Header__nav'>
+          <li className='Header__nav--link'>
+            <a href='#services'>Services</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#portfolio'>Portfolio</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#about'>About</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#team'>Team</a>
+          </li>
+          <li className='Header__nav--link'>
+            <a href='#contact'>Contact</a>
+          </li>
+        </ul>
       </div>
-      <ul className='Header__nav'>
-        <li className='Header__nav--link'>
-          <a href='#services'>Services</a>
-        </li>
-        <li className='Header__nav--link'>
-          <a href='#portfolio'>Portfolio</a>
-        </li>
-        <li className='Header__nav--link'>
-          <a href='#about'>About</a>
-        </li>
-        <li className='Header__nav--link'>
-          <a href='#team'>Team</a>
-        </li>
-        <li className='Header__nav--link'>
-          <a href='#contact'>Contact</a>
-        </li>
-      </ul>
     </div>
   );
 };
