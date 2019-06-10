@@ -8,7 +8,7 @@ sudo: required
 
 script:
   - npm test # Here you could also run the build step of your application
-  - npm lint
+  - npm run lint
 before_deploy: npm install now --no-save # Install Now CLI on Travis
 
 deploy:
