@@ -16,6 +16,15 @@ const Header = () => {
     console.log(window.pageYOffset);
     setYposition((yPosition = window.pageYOffset));
     console.log(yPosition);
+    yPosition > 100 && fadeToggle();
+    yPosition < 100 && fadeToggle();
+  };
+
+  const fadeToggle = () => {
+    let fade = document.querySelector('.Header');
+    yPosition > 100
+      ? (fade.style.backgroundColor = 'white')
+      : (fade.style.backgroundColor = 'gray');
   };
 
   const navToggle = () => {
