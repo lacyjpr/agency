@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <div>
       <div className='Header'>
-        <h1>Header</h1>
+        <div>Header</div>
         <div className='Header__menu' onClick={navToggle}>
           ☰
         </div>

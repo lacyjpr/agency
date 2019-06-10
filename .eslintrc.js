@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: 'react-app',
+  extends: ['react-app'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -16,8 +16,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-  },
+  plugins: ['react'],
+  rules: {},
 };

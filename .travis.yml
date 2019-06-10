@@ -6,8 +6,9 @@ cache:
 dist: trusty
 sudo: required
 
-script: npm test # Here you could also run the build step of your application
-
+script:
+  - npm test # Here you could also run the build step of your application
+  - npm lint
 before_deploy: npm install now --no-save # Install Now CLI on Travis
 
 deploy:
