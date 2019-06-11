@@ -1,7 +1,7 @@
 .Header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  text-align: center;
   position: fixed;
   width: 100%;
   background-color: gray;
@@ -24,7 +24,7 @@
     }
 
     &__nav {
-      display: block !important;
+      display: inline-block;
 
       &--link {
         display: inline;
