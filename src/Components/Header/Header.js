@@ -56,7 +56,7 @@ const Header = () => {
             style={{
               fontWeight: 300,
             }}
-            offset={-440}
+            offset={-380}
             onUpdate={el => {
               console.log(el);
             }}
