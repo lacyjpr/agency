@@ -16,8 +16,7 @@ const Header = () => {
     console.log(window.pageYOffset);
     setYposition((yPosition = window.pageYOffset));
     console.log(yPosition);
-    yPosition > 100 && fadeToggle();
-    yPosition < 100 && fadeToggle();
+    fadeToggle();
   };
 
   const fadeToggle = () => {
@@ -37,7 +36,7 @@ const Header = () => {
   return (
     <div>
       <div className='Header'>
-        <div>Header</div>
+        <div className='Header__title'>Header</div>
         <div className='Header__menu' onClick={navToggle}>
           ☰
         </div>
