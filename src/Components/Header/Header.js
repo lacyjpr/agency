@@ -16,15 +16,17 @@ const Header = () => {
     console.log(window.pageYOffset);
     setYposition((yPosition = window.pageYOffset));
     console.log(yPosition);
-    fadeToggle();
+    //fadeToggle();
   };
 
-  const fadeToggle = () => {
-    let fade = document.querySelector('.Header');
-    yPosition > 100
-      ? (fade.style.backgroundColor = 'white')
-      : (fade.style.backgroundColor = 'gray');
-  };
+  // const fadeToggle = () => {
+  //   let className = 'Header';
+  //   //let fade = document.querySelector('.Header');
+  //   yPosition > 100 ? (className = 'Scrolled') : (className = 'Header');
+
+  //   //? (fade.style.backgroundColor = 'white')
+  //   //: (fade.style.backgroundColor = 'gray');
+  // };
 
   const navToggle = () => {
     let collapse = document.querySelector('.Header__nav');
@@ -33,9 +35,11 @@ const Header = () => {
       : (collapse.style.display = 'block');
   };
 
+  let className = 'Header';
+  yPosition > 100 ? (className = 'Scrolled') : (className = 'Header');
   return (
     <div>
-      <div className='Header'>
+      <div className={className}>
         <div className='Header__title'>Header</div>
         <div className='Header__menu' onClick={navToggle}>
           ☰
