@@ -29,7 +29,7 @@ const Header = () => {
   // };
 
   const navToggle = () => {
-    let collapse = document.querySelector('.Header__nav');
+    let collapse = document.querySelector('.nav');
     collapse.style.display === 'block'
       ? (collapse.style.display = 'none')
       : (collapse.style.display = 'block');
@@ -40,11 +40,11 @@ const Header = () => {
   return (
     <div>
       <div className={className}>
-        <div className='Header__title'>Header</div>
-        <div className='Header__menu' onClick={navToggle}>
+        <div className='title'>Header</div>
+        <div className='menu' onClick={navToggle}>
           ☰
         </div>
-        <div className='Header__nav'>
+        <div className='nav'>
           <Scrollspy
             items={[
               'services',
@@ -65,25 +65,25 @@ const Header = () => {
               console.log(el);
             }}
           >
-            <li className='Header__nav--link'>
+            <li className='fakeLink'>
               <a href='#hero'> </a>
             </li>
-            <li className='Header__nav--link'>
+            <li className='link'>
               <a href='#services'>Services</a>
             </li>
-            <li className='Header__nav--link'>
+            <li className='link'>
               <a href='#portfolio'>Portfolio</a>
             </li>
-            <li className='Header__nav--link'>
+            <li className='link'>
               <a href='#about'>About</a>
             </li>
-            <li className='Header__nav--link'>
+            <li className='link'>
               <a href='#team'>Team</a>
             </li>
-            <li className='Header__nav--link'>
+            <li className='link'>
               <a href='#users'>Users</a>
             </li>
-            <li className='Header__nav--link'>
+            <li className='link'>
               <a href='#contact'>Contact</a>
             </li>
           </Scrollspy>
