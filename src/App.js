@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
 import Services from './Components/Services';
