@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   let className = 'Header';
-  yPosition > 100 ? (className = 'Scrolled') : (className = 'Header');
+  yPosition > 100 ? (className = 'Header Scrolled') : (className = 'Header');
   return (
     <div>
       <div className={className}>
