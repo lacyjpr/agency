@@ -1,6 +1,6 @@
 .Header {
-  display: flex;
-  justify-content: space-between;
+  //display: flex;
+  //justify-content: space-between;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -13,22 +13,24 @@
 
 .Scrolled {
   background-color: black;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .title {
   text-align: left;
-  padding-top: 15px;
+  //padding-top: 15px;
   color: yellow;
 }
 
 .menu {
   color: yellow;
+  text-align: end;
 }
 
 .nav {
   display: none;
+  text-align: left;
 }
 
 .Scrolled > .nav > .nav__inner {
@@ -48,7 +50,7 @@
 
   .title {
     text-align: left;
-    //padding-top: 65px;
+    padding-top: 15px;
   }
 
   .nav {
